@@ -10,6 +10,7 @@ Covered solutions:
 * [x] **Appium;**
 * [x] **Calabash;**
 * [ ] **KIF**
+* [ ] **[EarlGrey]**(https://github.com/google/EarlGrey)
 
 In order to present proper difference between automation solutions, the same app was covered with the same testing scenarios.
 Demo application represents a simple **Contacts** app which allows us to perform basic CRUD operations over the *Contact* entity.
