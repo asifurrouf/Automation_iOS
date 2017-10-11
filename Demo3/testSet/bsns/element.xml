@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+
+    <!--导航页面 -->
+    <activity name = "GuideActivity"><!--activity名称-->
+
+        <element name="Guide">
+            <name>Guide</name>
+            <type>RelativeLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>guideLayout</pathvalue>
+        </element>
+        
+        <element name="welcome"> <!-- 元素对象 -->
+            <name>Welcome</name><!-- 元素名称 -->
+            <type>RelativeLayout</type><!-- 元素类型 input/button -->
+            <pathtype>ID</pathtype><!-- 获取元素的模式 ID/XPATH/CLASSNAME/NAME-->
+            <pathvalue>ag_ll_dotlayout</pathvalue><!-- 元素定位路径 -->
+        </element>
+
+        <element name="goShop"> <!-- 元素对象 -->
+            <name>GoShop</name><!-- 元素名称 -->
+            <type>button</type><!-- 元素类型 input/button -->
+            <pathtype>ID</pathtype><!-- 获取元素的模式 ID/XPATH/CLASSNAME/NAME-->
+            <pathvalue>agi_bn_goshop</pathvalue><!-- 元素定位路径 -->
+        </element>
+
+        <element name="skip"> <!-- 元素对象 -->
+            <name>Skin</name><!-- 元素名称 -->
+            <type>button</type><!-- 元素类型 input/button -->
+            <pathtype>ID</pathtype><!-- 获取元素的模式 ID/XPATH/CLASSNAME/NAME-->
+            <pathvalue>skipBtn</pathvalue><!-- 元素定位路径 -->
+        </element>
+    </activity>
+
+    <!--所有的弹出框和加载-->
+    <activity name="Alert">
+
+        <element name="layout">
+            <name>layout</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>layout</pathvalue>
+        </element>
+
+        <element name="cancel">
+            <name>Cancel</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>cancel_btn</pathvalue>
+        </element>
+
+        <element name="message">
+            <name>message</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>message</pathvalue>
+        </element>
+
+        <element name="confirm">
+            <name>Confirm</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>confirm_btn</pathvalue>
+        </element>
+
+        <element name="loading">
+            <name>Loading</name>
+            <type>ProgressBar</type>
+            <pathtype>CLASSNAME</pathtype>
+            <pathvalue>android.widget.ProgressBar</pathvalue>
+        </element>
+
+    </activity>
+
+    <!--Shop-->
+    <activity name="Shop">
+        <element name="goods">
+            <name>goods</name>
+            <type>ImageView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>isg_iv_goods</pathvalue>
+        </element>
+    </activity>
+
+    <!-- GOODS DETAILS-->
+    <activity name="Good_details">
+        <element name="add">
+            <name>add</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>agd_bn_add_cart</pathvalue>
+        </element>
+
+        <element name="save">
+            <name>save</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>agd_bn_save</pathvalue>
+        </element>
+
+        <element name="write_review">
+            <name>write_review</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>agd_ll_write_review</pathvalue>
+        </element>
+    </activity>
+
+    <!-- write review-->
+    <activity name="Review">
+        <element name="user_name">
+            <name>user_name</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>awr_et_name</pathvalue>
+        </element>
+
+        <element name="content">
+            <name>content</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>awr_et_comment</pathvalue>
+        </element>
+
+        <element name="submit">
+            <name>submit</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>awr_bn_submit</pathvalue>
+        </element>
+    </activity>
+
+    <!--add cart-->
+    <activity name="add_cart">
+
+        <element name="add_cart">
+            <name>add_cart</name>
+            <type>LinearLayout</type>
+            <pathtype>CLASSNAME</pathtype>
+            <pathvalue>android.widget.LinearLayout</pathvalue>
+        </element>
+
+        <element name="size">
+            <name>size</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>igdcs_bn_size</pathvalue>
+        </element>
+
+        <element name="qty">
+            <name>qty</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>wgcn_et_num</pathvalue>
+        </element>
+
+        <element name="plus_qty">
+            <name>plus_qty</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>wgcn_bn_plus</pathvalue>
+        </element>
+
+        <element name="minus_qty">
+            <name>minus_qty</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>wgcn_bn_minus</pathvalue>
+        </element>
+        <element name="buy">
+            <name>buy</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>pgdac_bn_buy</pathvalue>
+        </element>
+
+        <element name="cancel">
+            <name>buy</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>pgdac_bn_cannel</pathvalue>
+        </element>
+    </activity>
+
+    <!-- SHOPPING CART-->
+    <activity name="Shopping_cart">
+        <element name="shopping_cart">
+            <name>shopping_cart</name>
+            <type>ImageView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>dfsc_tv_num</pathvalue>
+        </element>
+
+        <element name="goods_name">
+            <name>goods_name</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>ascli_goods_name</pathvalue>
+        </element>
+
+        <element name="goods_price">
+            <name>goods_price</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>ascli_goods_price</pathvalue>
+        </element>
+
+        <element name="goods_num">
+            <name>goods_num</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>wgcn_et_num</pathvalue>
+        </element>
+
+        <element name="plus_qty">
+            <name>plus_qty</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>wgcn_bn_plus</pathvalue>
+        </element>
+
+        <element name="minus_qty">
+            <name>minus_qty</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>wgcn_bn_minus</pathvalue>
+        </element>
+
+        <element name="total_price">
+            <name>total_price</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>asc_tv_total</pathvalue>
+        </element>
+
+        <element name="delete_goods">
+            <name>delete_goods</name>
+            <type>ImageView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>ascli_iv_remove</pathvalue>
+        </element>
+
+        <element name="shipping">
+            <name>shipping</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>asc_tv_ejony_shipping</pathvalue>
+        </element>
+
+    </activity>
+
+    <!--底部导航栏-->
+    <activity name="BottomNavigation">
+
+        <element name="BottomNavigation">
+            <name>BottomNavigation</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>fmc_ll_tab</pathvalue>
+        </element>
+
+        <element name="shop">
+            <name>Shop</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>fmc_bn_shop</pathvalue>
+        </element>
+
+        <element name="vote">
+            <name>vote</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>fmc_bn_vote</pathvalue>
+        </element>
+
+        <element name="photo">
+            <name>photo</name>
+            <type>ImageView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>fmc_iv_photo</pathvalue>
+        </element>
+
+        <element name="lookbook">
+            <name>lookbook</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>fmc_bn_lookbook</pathvalue>
+        </element>
+
+        <element name="profile">
+            <name>Profile</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>fmc_bn_profile</pathvalue>
+        </element>
+
+    </activity>
+
+    <!--profile-->
+    <activity name="profile">
+
+        <element name="title">
+            <name>title</name>
+            <type>RelativeLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>profile_head</pathvalue>
+        </element>
+
+        <element name="SignIn">
+            <name>SignIn</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>profile_sign_in</pathvalue>
+        </element>
+
+        <element name="SignOut">
+            <name>SignOut</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>profile_sign_out</pathvalue>
+        </element>
+
+        <element name="user">
+            <name>user</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>profile_user</pathvalue>
+        </element>
+
+        <element name="profile_tv">
+            <name>address</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>profile_tv_name</pathvalue>
+        </element>
+
+    </activity>
+
+    <!--Account Setting-->
+    <activity name="account_setting">
+        <element name="change_password">
+            <name>change_password</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>change_password</pathvalue>
+        </element>
+    </activity>
+
+    <!-- change password-->
+    <activity name="change_password">
+        <element name="pass_input">
+            <name>pass_input</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>we_et_input</pathvalue>
+        </element>
+
+        <element name="change_password">
+            <name>change_password</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>acp_bn_change_password</pathvalue>
+        </element>
+    </activity>
+
+    <!--login-->
+    <activity name="login">
+
+        <element name="title">
+            <name>title</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>wab_tv_title</pathvalue>
+        </element>
+
+        <element name="mailAndPass">
+            <name>mailAndPass</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>we_et_input</pathvalue>
+        </element>
+
+        <element name="signIn">
+            <name>signIn</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>al_bn_sign</pathvalue>
+        </element>
+
+        <element name="register">
+            <name>register</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>al_bn_register</pathvalue>
+        </element>
+    </activity>
+
+    <!--register-->
+    <activity name="register">
+
+        <element name="input">
+            <name>input</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>we_et_input</pathvalue>
+        </element>
+
+        <element name="register">
+            <name>register</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>ar_bn_register</pathvalue>
+
+        </element>
+    </activity>
+
+    <!-- wish_list-->
+    <activity name="wish_list">
+        <element name="goods_name">
+            <name>goods_name</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>amwli_goods_name</pathvalue>
+        </element>
+
+        <element name="delete_goods">
+            <name>delete_goods</name>
+            <type>ImageView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>amwli_iv_remove</pathvalue>
+        </element>
+    </activity>
+
+    <!-- Recently viewed-->
+    <activity name="recently_viewed">
+        <element name="goods_name">
+            <name>goods_name</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>arvli_goods_name</pathvalue>
+        </element>
+
+        <element name="no_data">
+            <name>no_data</name>
+            <type>LinearLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>arv_ll_nodata_layout</pathvalue>
+        </element>
+    </activity>
+
+    <!--顶部标题栏-->
+    <activity name="title">
+
+        <element name="backButton">
+            <name>backButton</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>wab_bn_left</pathvalue>
+        </element>
+
+        <element name="title">
+            <name>title</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>wab_tv_title</pathvalue>
+        </element>
+
+        <element name="rightButton">
+            <name>rightButton</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>wab_bn_right</pathvalue>
+        </element>
+
+    </activity>
+
+    <!-- 侧滑栏 -->
+    <activity name="sideBar">
+
+        <element name="">
+
+        </element>
+    </activity>
+
+    <!--Address Management-->
+    <activity name="address_management">
+
+        <element name="add_address">
+            <name>add_address</name>
+            <type>button</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>ama_bn_add</pathvalue>
+        </element>
+
+        <element name="recipient">
+            <name>recipient</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>ima_tv_name</pathvalue>
+        </element>
+    </activity>
+
+
+    <!--Address-->
+    <activity name="Address">
+
+        <element name="first_name">
+            <name>first_name</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>aad_et_firstname</pathvalue>
+        </element>
+
+        <element name="last_name">
+            <name>last_name</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>aad_et_lastname</pathvalue>
+        </element>
+
+        <element name="MS">
+            <name>MS</name>
+            <type>RadioButton</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>aad_rbn_ms</pathvalue>
+        </element>
+
+        <element name="MR">
+            <name>MR</name>
+            <type>RadioButton</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>aad_rbn_mr</pathvalue>
+        </element>
+
+        <element name="Country">
+            <name>Country</name>
+            <type>TextView</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>aad_tv_country</pathvalue>
+        </element>
+
+        <element name="Country_State_list">
+            <name>Country_list</name>
+            <type>TextView</type>
+            <pathtype>CLASSNAME</pathtype>
+            <pathvalue>android.widget.TextView</pathvalue>
+        </element>
+
+        <element name="State_Province">
+            <name>State_Province</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>aad_et_state</pathvalue>
+        </element>
+
+        <element name="City">
+            <name>City</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>aad_et_city</pathvalue>
+        </element>
+
+        <element name="Line1">
+            <name>Line1</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>aad_et_addressone</pathvalue>
+        </element>
+
+        <element name="Line2">
+            <name>Line2</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>aad_et_addresstwo</pathvalue>
+        </element>
+
+        <element name="Phone">
+            <name>Phone</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>aad_et_phone</pathvalue>
+        </element>
+
+        <element name="ZIP_code">
+            <name>ZIP_code</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>aad_et_postcode</pathvalue>
+        </element>
+    </activity>
+
+    <!--setting-->
+    <activity name="setting">
+        <element name="feed_back">
+            <name>feed_back</name>
+            <type>RelativeLayout</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>profile_setting_feedback</pathvalue>
+        </element>
+    </activity>
+
+    <activity name="feed_back">
+        <element name="email">
+            <name>email</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>afb_et_email</pathvalue>
+        </element>
+
+        <element name="advice">
+            <name>advice</name>
+            <type>EditText</type>
+            <pathtype>ID</pathtype>
+            <pathvalue>afb_et_message</pathvalue>
+        </element>
+    </activity>
+</page>
