@@ -1,0 +1,10 @@
+[caps]
+platformName = "ios"
+deviceName = "iPad Air"
+platformVersion = "10.2"
+app = "../../../apps/TestApp/build/release-iphonesimulator/TestApp.app"
+automationName = 'XCUITest'
+
+[appium_lib]
+sauce_username = false
+sauce_access_key = false
