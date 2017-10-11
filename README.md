@@ -19,3 +19,8 @@ There are 2 types of automated tests in iOS:
 * AppiumLibrary is an appium testing library for RobotFramework https://github.com/serhatbolsu/robotframework-appiumlibrary
 * [Robot Framework For Mobile Test Automation](https://www.xoriant.com/blog/product-engineering/robot-framework-mobile-test-automation.html)
 * [iOS Unit Testing and UI Testing Tutorial](https://www.raywenderlich.com/150073/ios-unit-testing-and-ui-testing-tutorial)
+
+### iOS Device Debugging
+
+* [A DevTools proxy (Chrome Remote Debugging Protocol) for iOS devices (Safari Remote Web Inspector)](https://github.com/google/ios-webkit-debug-proxy)
+* [Introduction-to-uiautomation-apple-s-automated-ui-testing-framework](https://www.cocoacontrols.com/posts/introduction-to-uiautomation-apple-s-automated-ui-testing-framework)
