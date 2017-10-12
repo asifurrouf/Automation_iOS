@@ -23,6 +23,8 @@ There are 2 types of automated tests in iOS:
 ### iOS Device Debugging
 
 * [A DevTools proxy (Chrome Remote Debugging Protocol) for iOS devices (Safari Remote Web Inspector)](https://github.com/google/ios-webkit-debug-proxy)
+* [RemoteDebug/remotedebug-ios-webkit-adapter](https://github.com/RemoteDebug/remotedebug-ios-webkit-adapter)
+* [libimobiledevice/libimobiledevice](https://github.com/libimobiledevice/libimobiledevice)
 * [Introduction-to-uiautomation-apple-s-automated-ui-testing-framework](https://www.cocoacontrols.com/posts/introduction-to-uiautomation-apple-s-automated-ui-testing-framework)
 * [On Ubuntu 16.04, since iOS 10 update, libimobiledevice can't connect to my iPhone. This is my attempt to document a fix](https://gist.github.com/samrocketman/70dff6ebb18004fc37dc5e33c259a0fc)
 * [Mount iphone-6s-on-ubuntu-16-04](https://askubuntu.com/questions/812006/how-can-i-mount-my-iphone-6s-on-ubuntu-16-04)
